@@ -1,0 +1,25 @@
+1. Cài đặt, cấu hình
+2. Cấu trúc thư muc:
+- Thư mục class chứa tất cả các class của project
+    +) Thư mục app/Console: Thư mục chứa tập tin định nghĩa các câu lệnh artisan
+    +) Thư mục app/Exceptions: Thư mục chứa các tập tin quản lý, điều hướng lỗi
+    +) Thư mục app/Http/Controllers: Thư mục chứa các Controllers của project
+    +) Thư mục app/Http/Middleware: Thư mục chúa các tập tin lọc và ngăn chặn request
+    +) Thư mục app/Providers: Thư mục chứa các file thực hiện và khai báo service và bind vào trong service container
+    +) Thư mục app/Models: Chứa các Models của project (laravel 8x có sẵn).
+- Thư mục bootstrap:Thư mục chứa những file khởi động của framework và những file cấu hình autoload, route và file cache
+- Thư mục config: chứa tất cả file cấu hình
+- Thư mục database: Chứa 2 thư mục migrations (tạo và thao tác database) và seed (tạo dữ liệu mẫu)
+    +) Thư mục database/factories: thư mục chứa các file định nghĩa các cột bảng dữ liệu để tạo các dữ liệu mẫu
+    +) Thư mục database/migrations: thư mục chứa file tạo và chỉnh sửa dữ liệu
+    +) Thư mục database/seeds: thư mục chứa các file tạo dữ liệu thêm vào csdl
+- Thư mục public: chứa file index.php như cổng chứa cho tất cả các request vào project.
+- Thư mục resources: chứa những file view và raw, các file biên soạn như LESS, SASS, hoặc javascript. Ngoài ra còn có các file language của hệ thống
+- Thư mục route: Thư mục chứa tất cả các điều khiển route (đường dẫn) trong project.
+- Thư mục storage: thư mục chứa các file biên soạn blade templates, file based saessions, file caches và những file sinh ra từ project
+    +) Thư mục app: chứa những file sinh ra từ project
+    +) Thư mục framework, chứa những file sinh ra từ framework và caches.
+    +) Thư mục logs chứa những file logs
+    +) Thư mục  /storage/app/public, chứa những file người dùng tạo
+- Thư mục tests: Chứa những file tests
+- Thư mục vendor: Thư mục chứa file thư viện của composer
